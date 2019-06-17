@@ -39,7 +39,7 @@ namespace YouTubeTestSela
 
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
-        "..\\..\\songs.csv", "songs#csv", DataAccessMethod.Sequential)]
+        "..\\..\\..\\songs.csv", "songs#csv", DataAccessMethod.Sequential)]
         public void FirstTest_CheckIfSongPlaying()
         {
             _pageFacade.topBarPage.SearchWord(TestContext.DataRow["song"].ToString());
