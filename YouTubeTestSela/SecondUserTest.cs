@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
@@ -15,27 +14,29 @@ namespace YouTubeTestSela
         WebDriverFactory factory = new WebDriverFactory();
         IWebDriver _driver;
         private PageFacade _pageFacade;
+        private TestContext testContext;
+        public TestContext TestContext
+        {
+            get { return testContext; }
+            set { testContext = value; }
+        }
 
         [TestInitialize]
         public void TestInitialize()
         {
-            /*
             _driver = factory.CreateInstance(config.Browser);
             _pageFacade = new PageFacade(_driver);
             _pageFacade.topBarPage.GoToUrl();
             _pageFacade.topBarPage.MakeLogIn();
             _pageFacade.logInPage.EnterEmailToFild(config.Name2, config.Password2);
-            */
-
         }
+
         [TestCleanup]
         public void TestCleanup()
         {
-            /*
             _driver.Close();
-            */
+            Console.WriteLine(TestContext.TestName + " " + TestContext.CurrentTestOutcome);
         }
-
 
         [TestMethod]
         public void SecondTest_ChecksCheangeSongInPlaylist()
@@ -51,17 +52,8 @@ namespace YouTubeTestSela
         [TestMethod]
         public void FourthTest_CheckIfWatchLaterShow()
         {
-            Console.WriteLine(  "ddsfsdfsdfsd");
             Assert.IsTrue(_pageFacade.resultPage.CheckIfBottonWatchingLaterExist());
         }
-
-        [TestMethod]
-        public void babab()
-        {
-            Console.WriteLine("ddsfsdfsdfsd");
-            Trace.WriteLine("second");
-            Assert.IsTrue(true);
-                }
 
     }
 }
