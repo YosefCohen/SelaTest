@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="YouTubeTestSela.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Browser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">chrome</Value>
+    </Setting>
+    <Setting Name="Name1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">test1sela@gmail.com</Value>
+    </Setting>
+    <Setting Name="Name2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">test2sela@gmail.com</Value>
+    </Setting>
+    <Setting Name="Password1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">yc963852741</Value>
+    </Setting>
+    <Setting Name="Password2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">yc963852741</Value>
+    </Setting>
+    <Setting Name="ChromeDriverExe" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\כהן\Documents\ChromeDriver_v75\chromedriver.exe</Value>
+    </Setting>
+    <Setting Name="SongName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Santana  </Value>
+    </Setting>
+    <Setting Name="SpecificSong" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Santana - Maria Maria </Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
